@@ -1,0 +1,54 @@
+/* textosComponent's private CSS styles */
+.textos {
+    align-items: center;
+    text-align: center;
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;    
+    width: inline-block;
+    height: 2.8em;
+  }
+  .textos li {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;       
+    height: 2.6em;
+    border-radius: 20px;
+    border-style: solid;
+  }
+
+  .textos li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+
+  .textos li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+
+  .textos li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+
+  .textos .badge {      
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    font-size: medium;
+    color: black;
+    padding: 0.2em 0.2em 0 0.2em;    
+    line-height: 1em;
+    position: relative;
+    left: 0px;
+    top: 5px;
+    height: 1.8em;
+    margin-right: 0.8em;
+    border-radius: 8px;
+  }
