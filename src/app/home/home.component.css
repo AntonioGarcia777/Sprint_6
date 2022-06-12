@@ -1,0 +1,9 @@
+.active {
+    color: red;
+    background-color: lightpink;
+    left: .1em;
+}
+
+.notActive{
+    background-color: #EEE;
+}

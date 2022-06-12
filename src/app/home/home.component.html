@@ -1,1 +1,38 @@
-<app-escena *ngFor="let frase of textos" style="list-style:none; padding-bottom: 1em" [fraseDeTextos]="frase"></app-escena>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    button {  
+        align-items: center;      
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 210px;
+        border: solid;
+    }
+    
+    button:hover {      
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .previous {      
+      font-size: medium;             
+      background-color: #f1f1f1;
+      color: black;
+      cursor: pointer;
+    }
+    
+    .next {
+      font-size: medium;
+      background-color: #f1f1f1;
+      color: black;
+      cursor: pointer;
+    } 
+    
+    </style>
+    </head>
+    <body>       
+        <button class="previous" (click)="prev()"><h3>&laquo; Anterior</h3></button>
+        <button class="next" (click)="next()"><h3>Següent &raquo;</h3></button>        
+    </body>
+
+<app-escena *ngFor="let frase of textos" [ngClass]="{'active': (frase.id === currentSentence), 'notActive': (frase.id != currentSentence)}" style="list-style: none; padding-bottom: 1em" [fraseDeTextos]="frase"></app-escena>

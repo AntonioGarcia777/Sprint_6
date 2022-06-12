@@ -7,11 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EscenaComponent implements OnInit { 
 
-  @Input () fraseDeTextos:any;
+  @Input () fraseDeTextos:any; 
 
-  constructor() { }
+  constructor() {    
+  }
 
   ngOnInit(): void {
-  }
+  }   
 
 }

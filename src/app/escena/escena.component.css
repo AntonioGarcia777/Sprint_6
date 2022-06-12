@@ -2,7 +2,7 @@
 .textos {
     align-items: center;
     text-align: center;
-    margin: 0 0 2em 0;
+    margin: 2em 0 0 0;
     list-style-type: none;
     padding: 0;    
     width: inline-block;
@@ -21,9 +21,9 @@
     border-style: solid;
   }
 
-  .textos li:hover {
+  .textos li:hover {    
     color: #607D8B;
-    background-color: #DDD;
+    background-color: lightpink;
     left: .1em;
   }
 
@@ -51,4 +51,4 @@
     height: 1.8em;
     margin-right: 0.8em;
     border-radius: 8px;
-  }
+  }  
